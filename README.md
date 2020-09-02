@@ -15,7 +15,9 @@ ruby script that:
 
 Rake task to call curresponding ParseLogService
 
-## CI label (optional)
+## CI label
+
+![Ruby](https://github.com/kirylpl/sp_parselog_app/workflows/Ruby/badge.svg)
 
 ## How to install
 
