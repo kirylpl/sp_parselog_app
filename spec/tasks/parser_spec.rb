@@ -20,7 +20,7 @@ RSpec.describe 'Rake Tasks' do
       filepath = 'spec/fixtures/files/webserver.log'
       expect do
         @task.invoke(filepath)
-      end.to output(/contact 89 unique views/).to_stdout
+      end.to output(/contact 90 unique views/).to_stdout
     end
   end
 
