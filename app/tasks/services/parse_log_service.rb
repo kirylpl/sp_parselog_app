@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Services
+  # ParseLogService
   class ParseLogService
     include ParseLogFile
 

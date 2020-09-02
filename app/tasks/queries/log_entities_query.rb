@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Queries
+  # LogEntitiesQuery
   class LogEntitiesQuery
     def self.call(log_enities)
       log_enities.group_by(&:page)

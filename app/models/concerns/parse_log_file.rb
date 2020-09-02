@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# ParseLogFile
 module ParseLogFile
   private
 
@@ -8,6 +9,7 @@ module ParseLogFile
     # Process a file sequentially, lines loaded into memory not at the same time.
     File.open(filepath).each do |line|
       next if line&.blank?
+
       page, ip = line.strip.split(' ')
       next until page&.present? && page&.include?('/')
       log_enities << Entities::LogEntity.new(page, ip)
